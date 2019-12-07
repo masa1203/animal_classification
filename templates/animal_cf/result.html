@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  Result
+{% endblock title %}
+
+{% block content %}
+  <h1>{{ message }}</h1>
+  <h1>{{ estimate_result }}</h1>
+  <p><a href="{% url 'animal_cf:index' %}">トップへ戻る</a></p>
+{% endblock content %}
